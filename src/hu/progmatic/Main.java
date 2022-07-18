@@ -27,9 +27,15 @@ public class Main {
 
             System.out.println("6.feladat: ");
             Map<String, Integer> sum = getSum(results);
-            for (String nameOfSport : sum.keySet()){
-                System.out.println(nameOfSport + ": " + sum.get(nameOfSport));
+            Map.Entry<String, Integer> maxEntry = null;
+
+            for (Map.Entry<String, Integer> entry : sum.entrySet()) {
+                if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0)
+                {
+                    maxEntry = entry;
+                }
             }
+            System.out.println(maxEntry.getKey() + " sportágban szereztek több érmet");
 
             System.out.println("8. feladat: " + mostMemberInTeam(results));
 
