@@ -20,7 +20,11 @@ public class Main {
             }
             System.out.println("Összesen: " + sumMedals(results));
 
-
+            for (Olimpia olimpia : results){
+                if(olimpia.getNameOfSport().equals("kajakkenu")){
+                    olimpia.setNameOfSport("kajak-kenu");
+                }
+            }
             fileWriter(results);
 
             System.out.println("5. feladat: Olimpiai pontok száma: " + sumPoints(results));

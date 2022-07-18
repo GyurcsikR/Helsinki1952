@@ -47,6 +47,7 @@ public class Olimpia {
 
     public void setNameOfSport(String nameOfSport) {
         this.nameOfSport = nameOfSport;
+
     }
 
     public String getTypeOfSport() {
