@@ -39,7 +39,7 @@ public class Main {
                     maxEntry = entry;
                 }
             }
-            System.out.println(maxEntry.getKey().toUpperCase() + " sportágban szereztek több érmet");
+            System.out.println(maxEntry.getKey().substring(0,1).toUpperCase() + maxEntry.getKey().substring(1) + " sportágban szereztek több érmet");
 
             System.out.println("8. feladat: " + mostMemberInTeam(results));
 
